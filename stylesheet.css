@@ -1,0 +1,922 @@
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box; /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+/* END NORMALIZE.CSS */
+
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+//NAVIGATION
+/* Giving a background-color to the nav container. */
+nav {
+    margin:.5em 0em;
+    background-color: #E64A19;
+    }
+  
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:relative" */
+nav ul {
+    padding:0;
+    margin:0;
+    list-style: none;
+    position: relative;
+    }
+ 
+/* Positioning the navigation items inline */
+nav ul li {
+    font-family: 'Stardos Stencil', cursive;
+    margin: 0;
+    display:inline-block;
+    float: left;
+    width: 8.5em;
+    text-align: center;
+    background-color: #E64A19;
+    border-top: .15em solid black;
+    border-bottom: .15em solid black;
+    }
+ 
+/* Styling the links */
+nav a {
+    display:block;
+    padding:0 1em;
+    color:#FFF;
+    font-size:1em;
+    line-height: 4em;
+    text-decoration:none;
+}
+ 
+/* Background color change on Hover */
+nav a:hover {
+    background-color: #292802;
+}
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 4em;
+}
+ 
+/* Display Dropdowns on Hover */
+nav ul li:hover > ul {
+    display:inherit;
+}
+ 
+/* First Tier Dropdown */
+nav ul ul li {
+    width: 8.5em;
+    float:none;
+    display:list-item;
+    position: relative;
+}
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+    position: relative;
+    top:-4em;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left:8.5em;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+li > a:after { content:  '+'; }
+li > a:only-child:after { content: ''; }
+
+
+//FLEXBOX SETUP
+
+/* Control overall size and behavior with the body element's inner-div' */
+body>div{
+ position: relative; 
+ display: -webkit-box; 
+ display: -webkit-flex; 
+ display: -ms-flexbox; 
+ display: flex;
+ -webkit-flex-flow: column nowrap;
+     -ms-flex-flow: column nowrap;
+         flex-flow: column nowrap;
+}
+header>div{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Set all elements with ARIA landmarks as flex boxes */
+[role]{
+ padding: 0 .625em; /* 16px / 10px = .625em  padding to left and right sides */
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1;
+}
+
+/* Style the banner inner-div */ 
+[role=banner]>div{
+ background-color: #fff;
+ text-align: center;
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ flex-align: row nowrap;
+}
+
+
+
+/* Style the site heading */
+[role=main] h1{
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1; /* h1 takes the entire line */
+}
+
+
+/* Style the page navigation and its descendants*/
+[role=navigation]{
+ list-style: none;
+ margin: 0; 
+ //background: deepskyblue;
+ padding: 0;
+ width: 100%;
+ position: relative;
+ //top: 0; 
+}
+
+/* Style the navigation unordered list */
+[role=navigation] ul{
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-flow: row nowrap;
+     -ms-flex-flow: row nowrap;
+         flex-flow: row nowrap;
+ -webkit-box-pack: start;
+ -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+         justify-content: flex-start;
+}
+
+/* Style the navigation list items */
+[role=navigation] li{
+ text-align: center;
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1;
+}
+
+/* Style the navigation anchors */
+[role=navigation] a{
+ line-height: 40px; /* Helps finger tips have room to click links */
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1;
+}
+/* Style the aside inner-div */
+[role=complementary]>div{
+ background-color: #fff;
+}
+
+/*Style the main element inner-div*/
+[role=main]>div{
+ background-color: #fff;
+}
+
+/* Style the footer and its descendants*/
+[role=contentinfo]{
+ font-size: 1em; /* .8em = 12.8px */
+ background-color: 90908F;
+ height: 6.5em;
+}
+
+/* Style the footer inner-div */
+[role=contentinfo]>div{
+ padding-bottom: 4em;
+}
+
+/* Style the footer's unordered list' */
+[role=contentinfo] ul{
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-flex-flow: row wrap;
+     -ms-flex-flow: row wrap;
+         flex-flow: row wrap;
+ -webkit-box-pack: start;
+ -webkit-justify-content: flex-start;
+     -ms-flex-pack: start;
+         justify-content: flex-start;
+}
+
+/* Style list items in the footer */
+[role=contentinfo] li{
+ text-align: center;
+ display: -webkit-box;
+ display: -webkit-flex;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-flex: 0;
+ -webkit-flex: 0 1 auto;
+     -ms-flex: 0 1 auto;
+         flex: 0 1 auto;
+}
+
+/* Style anchors in the footer */
+[role=contentinfo] a{
+ line-height: 40px; /* space for finger tips to click */
+ min-width: 40px;  /* space for finger tips to click */
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1;
+}
+
+/*Style Additional for Main Areas*/
+table, th, td {
+    width: auto;
+    border: 1px solid black;
+    
+}
+table{
+    border-spacing: 5px;
+}
+th, td{
+    text-align: left;
+    padding: 5px;
+}
+
+.right {
+    text-align: right;
+}
+caption{
+    font-family: 'Stardos Stencil', cursive;
+}
+
+/*NAV TABLET*/
+	@media (max-width: 1024px) and (orientation: landscape){
+		nav ul li {
+			width: 8em;
+			}
+		nav a {
+			font-size: 1em;
+			}
+		nav ul ul li {
+			width: 8em;
+			}
+		nav ul ul ul li {
+			left: 8em;
+			}
+		li > a:after {
+			content: '';
+			}
+		body>div{
+		position: relative;
+		display: -webkit-box; 
+ 		display: -webkit-flex; 
+ 		display: -ms-flexbox; 
+ 		display: flex;
+ 		-webkit-flex-flow: column nowrap;
+     		-ms-flex-flow: column nowrap;
+         		flex-flow: column nowrap;
+         	}
+	}
+	@media (max-width: 1024px) and (orientation: portrait){
+		nav ul li {
+			width: 9em;
+			display: block;
+			}
+		nav a {
+			font-size: 1em;
+			}
+		nav ul ul li {
+			width: 9em;
+			}
+		nav ul ul ul li {
+			left: 9em;
+			}
+		li > a:after {
+			content: '';
+			}
+	}
+/*NAV PHONE*/
+	@media (max-width: 667px) and (orientation: portrait){
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			}
+		nav ul li {
+			width: 100%;
+			display: block;
+			}
+		nav a {
+			font-size: 1em;
+			}
+		nav ul ul li {
+			display: none;
+			width: auto;
+			position: relative;
+			}
+		nav ul ul ul li {
+			display: none;
+			top: -4em;
+			left: auto;
+			}
+		li > a:after {
+			content: '';
+			}
+	}
+	@media (max-width: 667px) and (orientation: landscape){
+		img {
+			max-width: 19em;
+			max-height: 19em;
+			}
+		nav ul li{
+			width: 19em;
+			}
+		nav ul ul li {
+    		width: 13em;
+   			float: right;
+    		display: list-item;
+    		position: relative;
+    		left: 1em;
+			}
+		}
+
+/*IMAGE SHADOWS*/
+.shadows {
+    -webkit-box-shadow: 1em 1em 1em #7C7C7C;
+    box-shadow: 1em 1em 1em #7C7C7C;
+    }
+
+/*PAGE*/
+#page {
+	margin: 40px auto;
+	padding: 1em;
+	max-width: 61.75em;
+}
+
+/*Body*/
+body {
+	font-family: arial, sans-serif;
+	font-size: 16px;
+	font-size: 1em;
+	padding: 1em;
+	margin: 0;
+}
+
+body>div {
+	position: relative;
+	display: -webkit-box; 
+ 	display: -webkit-flex; 
+ 	display: -ms-flexbox; 
+ 	display: flex;
+ 	-webkit-flex-flow: column nowrap;
+     	-ms-flex-flow: column nowrap;
+         	flex-flow: column nowrap;
+    -webkit-box-pack: start;
+  	-webkit-justify-content: flex-start;
+    	-ms-flex-pack: start;
+    	justify-content: flex-start;
+}
+
+footer {
+	background-color: 90908F;
+	height: 6.5em;
+}
+
+/*Style all elements with roles to be flex children and 100% wide*/
+ *[role]{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 100%;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+ }
+
+/*Set the aside to get 1 share of the row and to become 3rd to be shown*/
+ aside[role]{
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4;
+ }
+ 
+ /*Set the main to get 4 shares of the row and to become 4th to be shown*/
+ section[role]{
+  -webkit-box-flex: 5;
+  -webkit-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3;
+ }
+ 
+ /* Set the footer to become 5th to be shown, placing it below the aside and main, which now set side by side and share a row */
+ footer[role]{
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5;
+ }
+
+
+/* Set all elements with ARIA landmarks as flex boxes */
+[role]{
+ padding: 0 .625em; /* 16px / 10px = .625em  padding to left and right sides */
+ -webkit-box-flex: 1;
+ -webkit-flex: 1;
+     -ms-flex: 1;
+         flex: 1;
+}
+
+h1 {
+	font-family: 'Stardos Stencil', cursive;
+	color: #636120;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+h2 {
+	font-family: 'Stardos Stencil', cursive;
+	color: #292802;
+	font-weight: 400;
+	font-size: 1.75em;
+	
+}
+
+h3 {
+	font-family: 'Stardos Stencil', cursive;
+	color: #292802;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1em;
+	width: 20em;
+	padding: 1em;
+	border: .1em dashed #000;
+	margin: .5em;
+}
+
+ol {
+	width: 100%;
+}
+
+li {
+	width: 50%;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: .15em;
+}
